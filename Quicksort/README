@@ -1,0 +1,14 @@
+INSTRUCTIONS
+
+Follow the following instructions to successfuly run the Quicksort algorithm
+
+1) Open terminal or ssh to tools.cs.earlham.edu.
+2) Create a directory. E.g. new_file.
+3) Save quicksort.py and the testing files (e.g. ints-1.dat) in the directory that you just created.
+4) Open quicksort.py with your favourite text editor and if you want you can change the test file to any file which you want to test the quicksort algorithm. You can change the test file at the very top of the code which is stored in the variable inputFile and it's passed as a parameter to the Split function. The default test file is ints-1.dat.  
+5) After the edits, if you made any, save the changes. Then, go to the terminal and write the command "python3 quicksort.py" without the quotes.
+6) Now you are seeing an array that's the sorted version of the test file that you passed as the first parameter of the Split fuction. 
+
+NOTE:
+    1) Sorting the items in the big files such as ints-10m.dat take longer than small files. Last time when the quicksort.py file was tested with ints-10m.dat it took the program 125.3879 seconds to sort all the elements. 
+    2) I had written this algorithm/code for an exercise for CS310 class, and this submission has used some of the concepts from that assignment.  
