@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "+++++++TEST 1.1++++++++"
+python3 network.py data1 < input11
+
+echo "+++++++TEST 1.2++++++++"
+python3 network.py data1 < input12
