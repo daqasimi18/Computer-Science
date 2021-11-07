@@ -1,0 +1,27 @@
+#!/bin/bash
+
+echo "########### TEST 1 ###########"
+echo "./make_change 25 10 60"
+./make_change 25 10 60
+echo "##############################"
+echo ""
+echo "########### TEST 2 ###########"
+echo "./make_change 25 10 5 1 103"
+./make_change 25 10 5 1 103
+echo "##############################"
+echo ""
+echo "########### TEST 3 ###########"
+echo "./make_change 25 10 5 4 1 18"
+./make_change 25 10 5 4 1 18
+echo "##############################"
+echo ""
+echo "########### TEST 4 ###########"
+echo "./make_change 25 10 5 4 3"
+./make_change 25 10 5 4 3
+echo "##############################"
+echo ""
+echo "########### TEST 5 ###########"
+echo "./make_change 100 25 10 5 4 1533"
+./make_change 100 25 10 5 4 1533
+echo "##############################"
+echo ""
