@@ -1,0 +1,23 @@
+The following instructions are to be followed to sucessfully run the TCP Chatroom Software
+
+1) You will need an application to display the user interface for which you can Install XQuartz on your local machine from: https://www.xquartz.org
+2) Go to your local machine's terminal and ssh -Y to bowie.cs.earlham.edu.
+3) Create a directory or folder.
+4) Copy server.py, client.py, and background_image.png in the folder you just created.
+5) By default the IP address used in the server.py file is Bowie's IP address, and the port number is 8080. You should change the IP address in server.py to the IP address of any other machine if you are running the file on some other machine. You should also check if the port number you are using is an open port. 
+6) In the terminal run the command "python3 server.py" without the quotes. 
+7) Once the server is running open a new terminal window. 
+8) Change your directory to where the cient.py file resides and run the command "python3 client.py" without the quotes. Make sure that background_image.png resides in the same directory as client.py. 
+9) You are now required to enter the IP address. Enter the IP address of the Bowie server if the server.py file is running on Bowie. If server.py file is running on some other machine enter the IP address of wherever the server.py file is running. The IP address in server.py and the one you enter in step 9 has to be the same and it applies to the port number as well. 
+10) If the IP address was correct and the server.py file was running without any error now you will be prompted to enter a username that the Chatroom will use as your identity. 
+11) Once the above information are entered correctly you will see a square gray colored user interface pop up which notifies that you got connected to the server. 
+
+How to use the user interface?
+
+	The user interface has a displaying window for messages and a chat box to write messages. In the display window you are able to see the messages that other users of the Chatroom send as well as your own. The chatroom window also displays who gets connected or leaves the chatroom. Besides, at the bottom of the user interface window there is a chat box where you are able to write your messages. You can send any message to the Chatroom with any text content by pressing the Send button except; the content of each individual messages can't be longer than 1024 bytes where if it's longer the client will only deliver 1024 bytes, and you can send /quit only if you want to exit from the Chatroom. 
+	The Chatroom is designed in a way where you are able to clean your username. Although you should keep in mind that cleaning your username from the chat box will result in removing you from the Chatroom. If you send any message that doesn't contain your username+":" and a space afterwards it will alert the client.py file that you want to leave the chatroom so keep in mind to NOT make changes to the default entry of the chat box. 
+
+Citation:
+	1) The skills of using sockets, sending messages, receiving, and encoding by ascii was learned from: https://www.geeksforgeeks.org/gui-chat-application-using-tkinter-in-python/?fbclid=IwAR1754cIMoXS051rCUpeH9vd0P8t9t4uSMRownEHQ3GZYdG2_U65YF6nIkM
+	2)  Learned about tkinter and some required skills for this project from: https://github.com/joeVenner/Python-Chat-Gui-App/blob/master/client.py?fbclid=IwAR1w-MDiecYgh28jDSmLBX3NBmi-LOtMts7jtYaT3KyOsRGwlL1fHzjR1E4
+        
