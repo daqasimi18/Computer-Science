@@ -1,0 +1,13 @@
+Follow the following instructions to run audio conversion program
+
+1) Go to you local machine's terminal and ssh to bowie.cs.earlham.edu.
+2) Create a directory. E.g. new_folder.
+3) Copy speech_program.py in the folder.
+4) Type the command "module avail" without the quotes. You will see three available python modules.
+5) Type the command "module load python/3.9" without the quotes to load python module 3.9.
+6) The reason we have to load python module 3.9 is that the libraries that are used in the software are available there.
+7) Now run the command "python3 speech_program.py" without the quotes.
+8) The program will ask you for a pdf file URL. Provide the URL to a pdf file that downloading it would be possible.
+9) If the URL is valid the program will prompt you to enter a page number from the pdf file to convert to audio.
+10) Then, the program will ask you if you want the speed of the audio to be slow speed or fast. If you want the speed to be slow press 's' or if you want it fast type 'f'. 
+11) Now the software has created three files in the directory where the file exists. The files are including the downloaded pdf file that you provided the URL which is called Book.pdf, converted audio that's called output.mp3, and a text file that's called converted.txt which has stored the pages that the program has converted to audio. 
